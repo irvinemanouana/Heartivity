@@ -10,7 +10,7 @@
 #import "ViewController.h"
 #import "WebServices.h"
 #import "TableViewController.h"
-#
+#import <HealthKit/HealthKit.h>
 
 @interface CreateAccountViewController ()
 {
@@ -80,8 +80,10 @@
                                                               [self presentViewController:controller animated:YES completion:nil];
                                                           }];
     
+    
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
+     
     
 }
 

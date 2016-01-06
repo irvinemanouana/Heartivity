@@ -36,7 +36,7 @@
 		9D3F9D6A1C0B529200DC5EFA /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D691C0B529200DC5EFA /* background.jpg */; };
 		9D3F9D6C1C0B584300DC5EFA /* Running-l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */; };
 		9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */; };
-		9DB95D7A1BF7BB8C0032911C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB95D791BF7BB8C0032911C /* HealthKit.framework */; };
+		9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA8A5A1C309346004E56BA /* HealthKit.framework */; };
 		9DE0D64B1BF65FD600A08F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64A1BF65FD600A08F51 /* main.m */; };
 		9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */; };
 		9DE0D6511BF65FD600A08F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D6501BF65FD600A08F51 /* ViewController.m */; };
@@ -115,8 +115,8 @@
 		9D3F9D691C0B529200DC5EFA /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Running-l.jpg"; sourceTree = "<group>"; };
 		9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
-		9DB95D791BF7BB8C0032911C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9DB95D7B1BF7BB8C0032911C /* Heartivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Heartivity.entitlements; sourceTree = "<group>"; };
+		9DDA8A5A1C309346004E56BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9DE0D6461BF65FD600A08F51 /* Heartivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heartivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE0D64A1BF65FD600A08F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DE0D64C1BF65FD600A08F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB95D7A1BF7BB8C0032911C /* HealthKit.framework in Frameworks */,
+				9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
-				9DB95D791BF7BB8C0032911C /* HealthKit.framework */,
+				9DDA8A5A1C309346004E56BA /* HealthKit.framework */,
 				9DE0D6481BF65FD600A08F51 /* Heartivity */,
 				9DE0D6611BF65FD600A08F51 /* Heartivity WatchKit App */,
 				9DE0D6701BF65FD600A08F51 /* Heartivity WatchKit Extension */,

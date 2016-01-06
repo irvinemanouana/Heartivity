@@ -32,11 +32,12 @@
     });
 }
 -(void)getInfoUser:(NSString *)email withpassword:(NSString *)password{
-    NSString* url = [NSString stringWithFormat:@"localhost:3000/user/%@/%@",email,password];
-    dispatch_queue_t queue = dispatch_queue_create("queue", NULL);
-    dispatch_async(queue, ^{
-        NSURL* URL = [NSURL URLWithString:url];
-        NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+  
+    NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@",email,password];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSURL* URL = [NSURL URLWithString: url];
+        NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:URL];
+        [request setHTTPMethod:@"GET"];
         NSError* error = nil;
         NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
         if (!error) {
@@ -47,6 +48,9 @@
         }
         
     });
+
+    
+    
 }
 
 @end

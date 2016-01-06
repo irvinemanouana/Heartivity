@@ -8,12 +8,23 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <HealthKit/HealthKit.h>
+
 
 @interface AppDelegate ()
-
+    @property (strong, nonatomic) HKHealthStore *healthStore;
 @end
 
 @implementation AppDelegate
+@synthesize healthStore;
+
+-(void)setupHealthStoreIfPossible{
+    if ([HKHealthStore isHealthDataAvailable]) {
+        self.healthStore= [[HKHealthStore alloc]init];
+        
+    }
+  
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -48,5 +59,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
