@@ -42,7 +42,9 @@
         NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
         if (!error) {
             NSString* str =[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@",str);
+            NSDictionary* jsonDictData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSLog(@"%@",[jsonDictData objectForKey:@"gender"]);
+            ;
         }else{
             NSLog(@"%@",@"error");
         }
