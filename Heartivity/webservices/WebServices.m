@@ -7,14 +7,20 @@
 //
 
 #import "WebServices.h"
-
+#import "Person.h"
 
 @implementation WebServices
 
-
--(void)createAccount:(NSString *)gender withpseudo:(NSString *)pseudo withemail:(NSString *)email withpassword:(NSString *)password withweight:(int)weight withheight:(int)height{
+-(NSDate *)convertStringToDate:(NSString *)StringDate{
+    NSDateFormatter *dateFormatter =[[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    NSDate *dateFromString = [[NSDate alloc] init];
+    dateFromString = [dateFormatter dateFromString:StringDate];
+    return dateFromString;
+}
+-(void)createAccount:(NSString *)gender withpseudo:(NSString *)pseudo withemail:(NSString *)email withbday:(NSString*)birthday withpassword:(NSString *)password withweight:(int)weight withheight:(int)height{
     
-    NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@/%@/%@/%d/%d",gender,pseudo,email,password,weight,height];
+    NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@/%@/%@/%@/%d/%d",gender,pseudo,email,birthday,password,weight,height];
     dispatch_queue_t queue = dispatch_queue_create("connection queue", NULL);
     dispatch_async(queue, ^{
         NSURL* URL = [NSURL URLWithString:url];
@@ -41,15 +47,25 @@
         NSError* error = nil;
         NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
         if (!error) {
-            NSString* str =[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+           
             NSDictionary* jsonDictData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-            NSLog(@"%@",[jsonDictData objectForKey:@"gender"]);
+            Person *p = [[Person alloc]init];
+            p.id =[jsonDictData objectForKey:@"_id"];
+            p.pseudo = [jsonDictData objectForKey:@"pseudo"];
+            p.gender =[jsonDictData objectForKey:@"gender"];
+            p.email = [jsonDictData objectForKey:@"email"];
+            p.weight =[jsonDictData objectForKey:@"weight"];
+            p.height = [jsonDictData objectForKey:@"height"];
+            p.imc =[jsonDictData objectForKey:@"imc"];
+            p.birthday=[jsonDictData objectForKey:@"bday"];
+            NSLog(@"%@",[jsonDictData description]);
             ;
         }else{
             NSLog(@"%@",@"error");
         }
         
     });
+    
 
     
     

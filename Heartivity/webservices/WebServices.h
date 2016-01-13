@@ -10,6 +10,7 @@
 
 @interface WebServices : NSObject
 
--(void)createAccount:(NSString*)gender withpseudo:(NSString*)pseudo withemail:(NSString*)email withpassword:(NSString*)password withweight:(int)weight withheight:(int)height;
+-(void)createAccount:(NSString*)gender withpseudo:(NSString*)pseudo withemail:(NSString*)email withbday:(NSString*)birthday withpassword:(NSString*)password withweight:(int)weight withheight:(int)height;
 -(void)getInfoUser:(NSString*)email withpassword:(NSString*)password;
+-(NSDate*)convertStringToDate:(NSString*)StringDate;
 @end

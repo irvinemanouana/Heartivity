@@ -9,6 +9,7 @@
 #import "Person.h"
 
 @implementation Person
+@synthesize id = id_;
 @synthesize gender=gender_;
 @synthesize pseudo = pseudo_;
 @synthesize email = email_;
@@ -24,5 +25,6 @@
     p.birthday=[self.birthday copy];
     return p;
 }
+
 
 @end

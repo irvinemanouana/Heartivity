@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "471026306.062678"
+            timestampString = "474303774.396272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-createAccount:withpseudo:withemail:withpassword:withweight:withheight:"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-createAccount:withpseudo:withemail:withbday:withpassword:withweight:withheight:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/CreateAccountViewController.m"
-            timestampString = "471300549.05282"
+            timestampString = "474309427.53785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "-onTouchCreate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/CreateAccountViewController.m"
-            timestampString = "471301247.546243"
+            timestampString = "474309427.53785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "@implementation CreateAccountViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "473728265.326498"
+            timestampString = "474303774.396272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-getInfoUser:withpassword:"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "473728271.555724"
+            timestampString = "474303774.396272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-getInfoUser:withpassword:"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "473730176.800884"
+            timestampString = "474303774.396272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "-createAccount:withpseudo:withemail:withpassword:withweight:withheight:"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-createAccount:withpseudo:withemail:withbday:withpassword:withweight:withheight:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "474295591.644118"
+            timestampString = "474307961.444211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "-getInfoUser:withpassword:"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,12 +250,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heartivity/webservices/WebServices.m"
-            timestampString = "473899879.423073"
+            timestampString = "474303774.396272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-createAccount:withpseudo:withemail:withpassword:withweight:withheight:"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-createAccount:withpseudo:withemail:withbday:withpassword:withweight:withheight:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -275,6 +275,38 @@
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heartivity/webservices/WebServices.m"
+            timestampString = "474306973.795651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-getInfoUser:withpassword:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heartivity/webservices/WebServices.m"
+            timestampString = "474307961.444211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-getInfoUser:withpassword:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

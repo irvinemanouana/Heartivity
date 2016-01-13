@@ -110,8 +110,8 @@
 		9D0ED1B01C051935006E4A4E /* logo_heartivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_heartivity.png; sourceTree = "<group>"; };
 		9D2810E51C10D6EC00F8244E /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
 		9D2810E61C10D6EC00F8244E /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
-		9D376C121BF9C71800431D59 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		9D376C131BF9C71800431D59 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9D376C121BF9C71800431D59 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		9D376C131BF9C71800431D59 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 		9D3F9D691C0B529200DC5EFA /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Running-l.jpg"; sourceTree = "<group>"; };
 		9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
@@ -190,6 +190,15 @@
 			path = webservices;
 			sourceTree = "<group>";
 		};
+		9DC983CE1C456DE600FB2883 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9D376C121BF9C71800431D59 /* Person.h */,
+				9D376C131BF9C71800431D59 /* Person.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +223,7 @@
 		9DE0D6481BF65FD600A08F51 /* Heartivity */ = {
 			isa = PBXGroup;
 			children = (
+				9DC983CE1C456DE600FB2883 /* models */,
 				9DB95D7B1BF7BB8C0032911C /* Heartivity.entitlements */,
 				9DE0D64C1BF65FD600A08F51 /* AppDelegate.h */,
 				9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */,
@@ -225,8 +235,6 @@
 				9DE0D6921BF672AD00A08F51 /* CreateAccountViewController.m */,
 				9DE0D6911BF672AD00A08F51 /* CreateAccountViewController.h */,
 				9DE0D6931BF672AD00A08F51 /* CreateAccountViewController.xib */,
-				9D376C121BF9C71800431D59 /* Person.h */,
-				9D376C131BF9C71800431D59 /* Person.m */,
 				9D0ED1921C04E9BE006E4A4E /* TableViewController.h */,
 				9D0ED1931C04E9BE006E4A4E /* TableViewController.m */,
 				9D0ED1941C04E9BE006E4A4E /* TableViewController.xib */,
