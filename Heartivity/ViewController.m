@@ -10,6 +10,7 @@
 #import "CreateAccountViewController.h"
 #import "TableViewController.h"
 #import "WebServices.h"
+#import "Session.h"
 
 
 @interface ViewController ()
@@ -19,6 +20,7 @@
     NSString* password;
     NSString* errormsg ;
     WebServices* connect;
+    Session* session;
 }
 @end
 
@@ -27,11 +29,19 @@
 @synthesize inputPassword;
 @synthesize labelError;
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     labelError.text = @"";
     connect = [[WebServices alloc ]init];
+    TableViewController* tab = [[TableViewController alloc]init];
+    session = [[Session alloc]init];
+    
+    if ([session sessionExist]) {
+         [self presentViewController:tab animated:YES completion:nil];
+    }
+   
     
 }
 

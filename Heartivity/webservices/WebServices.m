@@ -8,8 +8,13 @@
 
 #import "WebServices.h"
 #import "Person.h"
+#import "Session.h"
 
 @implementation WebServices
+{
+    Session* userSession;
+
+}
 
 -(NSDate *)convertStringToDate:(NSString *)StringDate{
     NSDateFormatter *dateFormatter =[[NSDateFormatter alloc]init];
@@ -49,6 +54,7 @@
         if (!error) {
            
             NSDictionary* jsonDictData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSLog(@"%@",[jsonDictData description]);
             Person *p = [[Person alloc]init];
             p.id =[jsonDictData objectForKey:@"_id"];
             p.pseudo = [jsonDictData objectForKey:@"pseudo"];
@@ -58,8 +64,11 @@
             p.height = [jsonDictData objectForKey:@"height"];
             p.imc =[jsonDictData objectForKey:@"imc"];
             p.birthday=[jsonDictData objectForKey:@"bday"];
-            NSLog(@"%@",[jsonDictData description]);
-            ;
+            
+            [userSession createSession:p];
+            
+            //
+          
         }else{
             NSLog(@"%@",@"error");
         }

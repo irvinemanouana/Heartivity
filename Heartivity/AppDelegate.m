@@ -30,6 +30,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     UINavigationController* nv = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    nv.navigationBarHidden=YES;
     UIWindow* w = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     w.rootViewController = nv;
     self.window = w;
