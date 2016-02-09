@@ -10,9 +10,10 @@
 
 @implementation Session
 
+
 -(void)createSession:(Person *)person{
     NSUserDefaults* defaultUser = [NSUserDefaults standardUserDefaults];
-    [defaultUser setBool:true forKey:@"exist"];
+    [defaultUser setBool:TRUE forKey:@"firstRun"];
     [defaultUser setValue:person.id forKey:@"id"];
     [defaultUser setValue:person.pseudo forKey:@"pseudo"];
     [defaultUser setValue:person.email forKey:@"email"];
@@ -22,11 +23,28 @@
     [defaultUser setObject:person.height forKey:@"height"];
     [defaultUser setObject:person.imc forKey:@"imc"];
     [defaultUser synchronize];
+    NSLog(@"%@",@"lol");
+     NSLog(@"%@",[defaultUser objectForKey:@"id"]);
 
 }
+-(Person*)getUserdata{
+    NSUserDefaults* defaultUser = [NSUserDefaults standardUserDefaults];
+    Person* p =[[Person alloc]init];
+    p.id =[defaultUser stringForKey:@"id"];
+    p.pseudo = [defaultUser  stringForKey:@"pseudo"];
+    p.email = [defaultUser  stringForKey:@"email"];
+    p.birthday =[defaultUser  objectForKey:@"birth"];
+    p.gender = [defaultUser stringForKey:@"gender"];
+    p.weight = [defaultUser objectForKey:@"weight"];
+    p.height = [defaultUser objectForKey:@"height"];
+    p.imc =[defaultUser objectForKey:@"imc"];
+    return p;
+}
+
 
 -(void)destroySession{
     NSUserDefaults* defaultUser = [NSUserDefaults standardUserDefaults];
+    
     [defaultUser removeObjectForKey:@"id"];
     [defaultUser removeObjectForKey:@"pseudo"];
     [defaultUser removeObjectForKey:@"email"];
@@ -36,18 +54,19 @@
     [defaultUser removeObjectForKey:@"height"];
     [defaultUser removeObjectForKey:@"imc"];
     [defaultUser synchronize];
+   
     
 }
 
 -(Boolean)sessionExist{
-    NSUserDefaults* defaultUser = [NSUserDefaults standardUserDefaults];
-    if (![[defaultUser stringForKey:@"id"] isEqualToString:@""]){
-        NSLog(@"%@",@"true");
-        return true;
-    }else{
-        NSLog(@"%@",@"false");
+    Person* user = [self getUserdata];
+    NSLog(@"%@, %@",user.pseudo,user.gender);
+    if (user.id==NULL) {
         return false;
+    }else{
+        return  true;
     }
+    
 }
 
 @end

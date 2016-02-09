@@ -52,7 +52,7 @@
         NSError* error = nil;
         NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
         if (!error) {
-           
+            userSession = [[Session alloc]init];
             NSDictionary* jsonDictData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             NSLog(@"%@",[jsonDictData description]);
             Person *p = [[Person alloc]init];
@@ -66,8 +66,8 @@
             p.birthday=[jsonDictData objectForKey:@"bday"];
             
             [userSession createSession:p];
-            
-            //
+            Person* person=  [userSession getUserdata];
+             NSLog(@"%@",person.pseudo);
           
         }else{
             NSLog(@"%@",@"error");

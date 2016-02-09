@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CreateAccountViewController.h"
 #import "TableViewController.h"
+#import "FollowViewController.h"
 #import "WebServices.h"
 #import "Session.h"
 
@@ -21,7 +22,10 @@
     NSString* errormsg ;
     WebServices* connect;
     Session* session;
+    
+    
 }
+
 @end
 
 @implementation ViewController
@@ -30,19 +34,18 @@
 @synthesize labelError;
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    session = [[Session alloc]init];
     labelError.text = @"";
     connect = [[WebServices alloc ]init];
     TableViewController* tab = [[TableViewController alloc]init];
-    session = [[Session alloc]init];
-    
-    if ([session sessionExist]) {
-         [self presentViewController:tab animated:YES completion:nil];
+ 
+    if ([session sessionExist]==true) {
+        [self.navigationController pushViewController:tab animated:YES];
     }
-   
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +69,11 @@
         
         [connect getInfoUser:email withpassword:password];
         NSLog(@"yes");
+        if ([session sessionExist]==TRUE) {
+            NSLog(@"%@",@"true");
+        }else{
+            NSLog(@"%@",@"false");
+        }
         //TableViewController *controller= [[TableViewController alloc]init];
         //[self presentViewController:controller animated:YES completion:nil];
         //labelError.text = @"LOL";
@@ -77,7 +85,8 @@
 - (IBAction)onTouchCreatAccount:(id)sender {
     //change controller
     CreateAccountViewController* newAccountPage = [CreateAccountViewController new];
-    [self presentViewController:newAccountPage animated:YES completion:nil];
+    //[self presentViewController:newAccountPage animated:YES completion:nil];
+    [self.navigationController pushViewController:newAccountPage animated:YES];
 }
 
 @end

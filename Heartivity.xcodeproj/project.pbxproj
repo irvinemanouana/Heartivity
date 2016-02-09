@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D0314171C0DCF7800EE2A66 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0314161C0DCF7800EE2A66 /* ViewController.xib */; };
-		9D0ED1951C04E9BE006E4A4E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0ED1931C04E9BE006E4A4E /* TableViewController.m */; };
-		9D0ED1961C04E9BE006E4A4E /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1941C04E9BE006E4A4E /* TableViewController.xib */; };
+		9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */; };
+		9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */; };
+		9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */; };
+		9D04668C1C6A9A6F00205F26 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */; };
+		9D04668D1C6A9A6F00205F26 /* FollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466741C6A9A6F00205F26 /* FollowViewController.m */; };
+		9D04668E1C6A9A6F00205F26 /* FollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466751C6A9A6F00205F26 /* FollowViewController.xib */; };
+		9D04668F1C6A9A6F00205F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466761C6A9A6F00205F26 /* LaunchScreen.storyboard */; };
+		9D0466921C6A9A6F00205F26 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */; };
+		9D0466931C6A9A6F00205F26 /* MenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */; };
+		9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */; };
+		9D0466951C6A9A6F00205F26 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */; };
+		9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466811C6A9A6F00205F26 /* TableViewCell.m */; };
+		9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466821C6A9A6F00205F26 /* TableViewCell.xib */; };
+		9D0466981C6A9A6F00205F26 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466841C6A9A6F00205F26 /* TableViewController.m */; };
+		9D0466991C6A9A6F00205F26 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466851C6A9A6F00205F26 /* TableViewController.xib */; };
+		9D04669A1C6A9A6F00205F26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466871C6A9A6F00205F26 /* ViewController.m */; };
+		9D04669B1C6A9A6F00205F26 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466881C6A9A6F00205F26 /* ViewController.xib */; };
 		9D0ED19E1C050BD5006E4A4E /* icone_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1981C050BD5006E4A4E /* icone_calendar.png */; };
 		9D0ED19F1C050BD5006E4A4E /* icone_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1981C050BD5006E4A4E /* icone_calendar.png */; };
 		9D0ED1A01C050BD5006E4A4E /* icone_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1981C050BD5006E4A4E /* icone_calendar.png */; };
@@ -33,6 +47,11 @@
 		9D0ED1B31C051935006E4A4E /* logo_heartivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1B01C051935006E4A4E /* logo_heartivity.png */; };
 		9D15ABD01C4A97F4000BE511 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D15ABCF1C4A97F4000BE511 /* Person.m */; };
 		9D2810E71C10D6EC00F8244E /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2810E61C10D6EC00F8244E /* WebServices.m */; };
+		9D342D631C67E808000F8366 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D342D621C67E808000F8366 /* right.png */; };
+		9D342D651C67F5D5000F8366 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D342D641C67F5D5000F8366 /* CoreLocation.framework */; };
+		9D3C685E1C63F89500AEDFFF /* UserProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3C685C1C63F89500AEDFFF /* UserProfile.png */; };
+		9D3C685F1C63F89500AEDFFF /* WeighingScale.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3C685D1C63F89500AEDFFF /* WeighingScale.png */; };
+		9D3C68611C63F8A100AEDFFF /* MeasuringTape.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3C68601C63F8A100AEDFFF /* MeasuringTape.png */; };
 		9D3F9D6A1C0B529200DC5EFA /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D691C0B529200DC5EFA /* background.jpg */; };
 		9D3F9D6C1C0B584300DC5EFA /* Running-l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */; };
 		9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */; };
@@ -40,9 +59,7 @@
 		9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA8A5A1C309346004E56BA /* HealthKit.framework */; };
 		9DE0D64B1BF65FD600A08F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64A1BF65FD600A08F51 /* main.m */; };
 		9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */; };
-		9DE0D6511BF65FD600A08F51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D6501BF65FD600A08F51 /* ViewController.m */; };
 		9DE0D6561BF65FD600A08F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D6551BF65FD600A08F51 /* Assets.xcassets */; };
-		9DE0D6591BF65FD600A08F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D6571BF65FD600A08F51 /* LaunchScreen.storyboard */; };
 		9DE0D65E1BF65FD600A08F51 /* Heartivity WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9DE0D65D1BF65FD600A08F51 /* Heartivity WatchKit App.app */; };
 		9DE0D6641BF65FD600A08F51 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D6621BF65FD600A08F51 /* Interface.storyboard */; };
 		9DE0D6661BF65FD600A08F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D6651BF65FD600A08F51 /* Assets.xcassets */; };
@@ -51,8 +68,6 @@
 		9DE0D6781BF65FD600A08F51 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D6771BF65FD600A08F51 /* ExtensionDelegate.m */; };
 		9DE0D67B1BF65FD600A08F51 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D67A1BF65FD600A08F51 /* NotificationController.m */; };
 		9DE0D67D1BF65FD600A08F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D67C1BF65FD600A08F51 /* Assets.xcassets */; };
-		9DE0D6941BF672AD00A08F51 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D6921BF672AD00A08F51 /* CreateAccountViewController.m */; };
-		9DE0D6951BF672AD00A08F51 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE0D6931BF672AD00A08F51 /* CreateAccountViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,10 +113,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D0314161C0DCF7800EE2A66 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		9D0ED1921C04E9BE006E4A4E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		9D0ED1931C04E9BE006E4A4E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		9D0ED1941C04E9BE006E4A4E /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewCell.h; sourceTree = "<group>"; };
+		9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewCell.m; sourceTree = "<group>"; };
+		9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
+		9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		9D0466731C6A9A6F00205F26 /* FollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowViewController.h; sourceTree = "<group>"; };
+		9D0466741C6A9A6F00205F26 /* FollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowViewController.m; sourceTree = "<group>"; };
+		9D0466751C6A9A6F00205F26 /* FollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowViewController.xib; sourceTree = "<group>"; };
+		9D0466761C6A9A6F00205F26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D04667A1C6A9A6F00205F26 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewController.xib; sourceTree = "<group>"; };
+		9D04667D1C6A9A6F00205F26 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9D0466801C6A9A6F00205F26 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		9D0466811C6A9A6F00205F26 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		9D0466821C6A9A6F00205F26 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		9D0466831C6A9A6F00205F26 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9D0466841C6A9A6F00205F26 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		9D0466851C6A9A6F00205F26 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		9D0466861C6A9A6F00205F26 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D0466871C6A9A6F00205F26 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D0466881C6A9A6F00205F26 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		9D0ED1981C050BD5006E4A4E /* icone_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_calendar.png; sourceTree = "<group>"; };
 		9D0ED1991C050BD5006E4A4E /* icone_communaute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_communaute.png; sourceTree = "<group>"; };
 		9D0ED19A1C050BD5006E4A4E /* icone_défi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone_défi.png"; sourceTree = "<group>"; };
@@ -113,6 +149,11 @@
 		9D15ABCF1C4A97F4000BE511 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9D2810E51C10D6EC00F8244E /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
 		9D2810E61C10D6EC00F8244E /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		9D342D621C67E808000F8366 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		9D342D641C67F5D5000F8366 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9D3C685C1C63F89500AEDFFF /* UserProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserProfile.png; sourceTree = "<group>"; };
+		9D3C685D1C63F89500AEDFFF /* WeighingScale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeighingScale.png; sourceTree = "<group>"; };
+		9D3C68601C63F8A100AEDFFF /* MeasuringTape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MeasuringTape.png; sourceTree = "<group>"; };
 		9D3F9D691C0B529200DC5EFA /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Running-l.jpg"; sourceTree = "<group>"; };
 		9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
@@ -124,10 +165,7 @@
 		9DE0D64A1BF65FD600A08F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DE0D64C1BF65FD600A08F51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DE0D64F1BF65FD600A08F51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DE0D6501BF65FD600A08F51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9DE0D6551BF65FD600A08F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DE0D6581BF65FD600A08F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DE0D65A1BF65FD600A08F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DE0D65D1BF65FD600A08F51 /* Heartivity WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heartivity WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE0D6631BF65FD600A08F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -143,9 +181,6 @@
 		9DE0D67A1BF65FD600A08F51 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		9DE0D67C1BF65FD600A08F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE0D67E1BF65FD600A08F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DE0D6911BF672AD00A08F51 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
-		9DE0D6921BF672AD00A08F51 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
-		9DE0D6931BF672AD00A08F51 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D342D651C67F5D5000F8366 /* CoreLocation.framework in Frameworks */,
 				9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,8 +206,12 @@
 		9D0ED1971C050BD5006E4A4E /* drawlables */ = {
 			isa = PBXGroup;
 			children = (
+				9D342D621C67E808000F8366 /* right.png */,
 				9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */,
+				9D3C68601C63F8A100AEDFFF /* MeasuringTape.png */,
 				9D3F9D6B1C0B584300DC5EFA /* Running-l.jpg */,
+				9D3C685C1C63F89500AEDFFF /* UserProfile.png */,
+				9D3C685D1C63F89500AEDFFF /* WeighingScale.png */,
 				9D3F9D691C0B529200DC5EFA /* background.jpg */,
 				9D0ED1B01C051935006E4A4E /* logo_heartivity.png */,
 				9D0ED1981C050BD5006E4A4E /* icone_calendar.png */,
@@ -191,6 +231,38 @@
 				9D2810E61C10D6EC00F8244E /* WebServices.m */,
 			);
 			path = webservices;
+			sourceTree = "<group>";
+		};
+		9D3C684C1C63DA6200AEDFFF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */,
+				9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */,
+				9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */,
+				9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */,
+				9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */,
+				9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */,
+				9D0466731C6A9A6F00205F26 /* FollowViewController.h */,
+				9D0466741C6A9A6F00205F26 /* FollowViewController.m */,
+				9D0466751C6A9A6F00205F26 /* FollowViewController.xib */,
+				9D0466761C6A9A6F00205F26 /* LaunchScreen.storyboard */,
+				9D04667A1C6A9A6F00205F26 /* MenuTableViewController.h */,
+				9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */,
+				9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */,
+				9D04667D1C6A9A6F00205F26 /* ProfileViewController.h */,
+				9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */,
+				9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */,
+				9D0466801C6A9A6F00205F26 /* TableViewCell.h */,
+				9D0466811C6A9A6F00205F26 /* TableViewCell.m */,
+				9D0466821C6A9A6F00205F26 /* TableViewCell.xib */,
+				9D0466831C6A9A6F00205F26 /* TableViewController.h */,
+				9D0466841C6A9A6F00205F26 /* TableViewController.m */,
+				9D0466851C6A9A6F00205F26 /* TableViewController.xib */,
+				9D0466861C6A9A6F00205F26 /* ViewController.h */,
+				9D0466871C6A9A6F00205F26 /* ViewController.m */,
+				9D0466881C6A9A6F00205F26 /* ViewController.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		9D61F4131C60233D0008E939 /* sessions */ = {
@@ -214,6 +286,7 @@
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
+				9D342D641C67F5D5000F8366 /* CoreLocation.framework */,
 				9DDA8A5A1C309346004E56BA /* HealthKit.framework */,
 				9DE0D6481BF65FD600A08F51 /* Heartivity */,
 				9DE0D6611BF65FD600A08F51 /* Heartivity WatchKit App */,
@@ -235,24 +308,15 @@
 		9DE0D6481BF65FD600A08F51 /* Heartivity */ = {
 			isa = PBXGroup;
 			children = (
+				9D3C684C1C63DA6200AEDFFF /* views */,
 				9D61F4131C60233D0008E939 /* sessions */,
 				9DC983CE1C456DE600FB2883 /* models */,
 				9DB95D7B1BF7BB8C0032911C /* Heartivity.entitlements */,
 				9DE0D64C1BF65FD600A08F51 /* AppDelegate.h */,
 				9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */,
-				9DE0D64F1BF65FD600A08F51 /* ViewController.h */,
-				9DE0D6501BF65FD600A08F51 /* ViewController.m */,
-				9D0314161C0DCF7800EE2A66 /* ViewController.xib */,
 				9D2810E41C10D6BD00F8244E /* webservices */,
 				9D0ED1971C050BD5006E4A4E /* drawlables */,
-				9DE0D6921BF672AD00A08F51 /* CreateAccountViewController.m */,
-				9DE0D6911BF672AD00A08F51 /* CreateAccountViewController.h */,
-				9DE0D6931BF672AD00A08F51 /* CreateAccountViewController.xib */,
-				9D0ED1921C04E9BE006E4A4E /* TableViewController.h */,
-				9D0ED1931C04E9BE006E4A4E /* TableViewController.m */,
-				9D0ED1941C04E9BE006E4A4E /* TableViewController.xib */,
 				9DE0D6551BF65FD600A08F51 /* Assets.xcassets */,
-				9DE0D6571BF65FD600A08F51 /* LaunchScreen.storyboard */,
 				9DE0D6491BF65FD600A08F51 /* Supporting Files */,
 			);
 			path = Heartivity;
@@ -412,19 +476,28 @@
 			files = (
 				9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */,
 				9D0ED1A41C050BD5006E4A4E /* icone_défi.png in Resources */,
-				9DE0D6591BF65FD600A08F51 /* LaunchScreen.storyboard in Resources */,
-				9DE0D6951BF672AD00A08F51 /* CreateAccountViewController.xib in Resources */,
+				9D342D631C67E808000F8366 /* right.png in Resources */,
 				9D0ED1A11C050BD5006E4A4E /* icone_communaute.png in Resources */,
 				9D0ED19E1C050BD5006E4A4E /* icone_calendar.png in Resources */,
 				9D3F9D6A1C0B529200DC5EFA /* background.jpg in Resources */,
+				9D04668F1C6A9A6F00205F26 /* LaunchScreen.storyboard in Resources */,
 				9D3F9D6C1C0B584300DC5EFA /* Running-l.jpg in Resources */,
+				9D04668C1C6A9A6F00205F26 /* CreateAccountViewController.xib in Resources */,
+				9D3C685F1C63F89500AEDFFF /* WeighingScale.png in Resources */,
 				9D0ED1A71C050BD5006E4A4E /* icone_femme.png in Resources */,
 				9D0ED1AD1C050BD5006E4A4E /* icone_suivi.png in Resources */,
+				9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */,
+				9D3C685E1C63F89500AEDFFF /* UserProfile.png in Resources */,
+				9D04668E1C6A9A6F00205F26 /* FollowViewController.xib in Resources */,
+				9D0466991C6A9A6F00205F26 /* TableViewController.xib in Resources */,
+				9D0466931C6A9A6F00205F26 /* MenuTableViewController.xib in Resources */,
+				9D0466951C6A9A6F00205F26 /* ProfileViewController.xib in Resources */,
 				9D0ED1B11C051935006E4A4E /* logo_heartivity.png in Resources */,
-				9D0ED1961C04E9BE006E4A4E /* TableViewController.xib in Resources */,
+				9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */,
+				9D04669B1C6A9A6F00205F26 /* ViewController.xib in Resources */,
 				9D0ED1AA1C050BD5006E4A4E /* icone_homme.png in Resources */,
+				9D3C68611C63F8A100AEDFFF /* MeasuringTape.png in Resources */,
 				9DE0D6561BF65FD600A08F51 /* Assets.xcassets in Resources */,
-				9D0314171C0DCF7800EE2A66 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,13 +539,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D04669A1C6A9A6F00205F26 /* ViewController.m in Sources */,
 				9D61F4161C6023570008E939 /* Session.m in Sources */,
-				9DE0D6941BF672AD00A08F51 /* CreateAccountViewController.m in Sources */,
+				9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */,
+				9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */,
 				9D15ABD01C4A97F4000BE511 /* Person.m in Sources */,
+				9D0466921C6A9A6F00205F26 /* MenuTableViewController.m in Sources */,
+				9D04668D1C6A9A6F00205F26 /* FollowViewController.m in Sources */,
+				9D0466981C6A9A6F00205F26 /* TableViewController.m in Sources */,
 				9D2810E71C10D6EC00F8244E /* WebServices.m in Sources */,
-				9DE0D6511BF65FD600A08F51 /* ViewController.m in Sources */,
 				9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */,
-				9D0ED1951C04E9BE006E4A4E /* TableViewController.m in Sources */,
+				9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */,
+				9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */,
 				9DE0D64B1BF65FD600A08F51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,14 +581,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9DE0D6571BF65FD600A08F51 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DE0D6581BF65FD600A08F51 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		9DE0D6621BF65FD600A08F51 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

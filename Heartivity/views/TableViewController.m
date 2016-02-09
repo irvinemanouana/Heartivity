@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "CreateAccountViewController.h"
+#import "TableViewCell.h"
 @interface TableViewController ()
 {
     NSMutableArray* menu;
@@ -17,7 +18,7 @@
 @end
 
 @implementation TableViewController
-@synthesize tablemenu;
+@synthesize tablemenu=_tablemenu;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,27 +35,34 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     // The first method is used to inform the table view how many rows are in the section
-    return [menu count];
+    return 5;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *simpleTableIdentifier = @"items";
+    static NSString *simpleTableIdentifier = @"TableViewCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    TableViewCell *cell = (TableViewCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:simpleTableIdentifier owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
     
-    cell.textLabel.text = [menu objectAtIndex:indexPath.row];
-    cell.imageView.image =[imageArray objectAtIndex:indexPath.row];
+    cell.TitleCell.text = [menu objectAtIndex:indexPath.row];
+    cell.SubTitleCell.text =[menu objectAtIndex:indexPath.row];
+    cell.ImageCell.image =[imageArray objectAtIndex:indexPath.row];
     return cell;
 
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
 }
 
 

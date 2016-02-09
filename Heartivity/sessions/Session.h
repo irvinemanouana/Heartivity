@@ -13,5 +13,6 @@
 -(void)createSession:(Person*)person;
 -(void)destroySession;
 -(Boolean)sessionExist;
+-(Person*)getUserdata;
 
 @end

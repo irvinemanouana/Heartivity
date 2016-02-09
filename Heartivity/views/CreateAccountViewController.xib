@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -59,16 +59,6 @@
                     </segments>
                     <color key="tintColor" red="0.9137254901960784" green="0.33725490196078434" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                 </segmentedControl>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pal-GT-R3U">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <items>
-                        <barButtonItem title="Retour" width="59" id="Zhn-gg-Eul">
-                            <connections>
-                                <action selector="onTouchBack:" destination="-1" id="4bz-QR-ABS"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                </toolbar>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Poids en Kg" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2X-VY-zDq">
                     <rect key="frame" x="27" y="432" width="113" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
