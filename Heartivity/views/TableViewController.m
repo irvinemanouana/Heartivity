@@ -9,6 +9,10 @@
 #import "TableViewController.h"
 #import "CreateAccountViewController.h"
 #import "TableViewCell.h"
+
+#import "ProfileViewController.h"
+#import "FollowViewController.h"
+
 @interface TableViewController ()
 {
     NSMutableArray* menu;
@@ -66,7 +70,32 @@
 }
 
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    long selectedRow = (long)indexPath.item;
+    NSLog(@"%ld", selectedRow);
+    
+    switch (selectedRow) {
+        case 0:
+        {
+            NSLog(@"Go to profile");
+            ProfileViewController* profilePage = [ProfileViewController new];
+            [self presentViewController:profilePage animated:YES completion:nil];
+            break;
+        }
+            
+        case 1:
+        {
+            NSLog(@"Go to suivi");
+            FollowViewController* followPage = [FollowViewController new];
+            [self presentViewController:followPage animated:YES completion:nil];
+            break;
+        }
+            
+        default:
+            break;
+    }
+}
 
 
 /*

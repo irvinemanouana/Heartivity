@@ -55,6 +55,39 @@
     });
 }
 
+- (void) updateAccount:(NSString*)gender withPseudo:(NSString*)pseudo withEmail:(NSString*)email withBday:(NSString*)birthday withPassword:(NSString*)password withWeight:(int)weight withHeight:(int)height {
+    
+    NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@/%@/%@/%@/%d/%d",
+                     gender,
+                     pseudo,
+                     email,
+                     birthday,
+                     password,
+                     weight,
+                     height];
+    
+    dispatch_queue_t queue = dispatch_queue_create("connection queue", NULL);
+    
+    dispatch_async(queue, ^
+    {
+        NSURL* URL = [NSURL URLWithString:url];
+        NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:URL];
+        [request setHTTPMethod:@"POST"];
+                       
+        NSError* error = nil;
+        NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
+
+        if (!error) {
+            NSString* str =[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"%@",str);
+        } else {
+            NSLog(@"%@",@"error");
+        }
+    });
+}
+
+
+
 - (void)getInfoUser:(NSString *)email withPassword:(NSString *)password withCompletion:(void(^)(BOOL connectionError)) completion {
   
     NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@",
