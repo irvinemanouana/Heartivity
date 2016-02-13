@@ -73,7 +73,7 @@
     [dateFormat setDateFormat:@"dd-MM-yyyy"];
     NSString* dateToString = [dateFormat stringFromDate:date];
     NSLog(@"%@, birthday",dateToString);
-    [wbs createAccount:gender withpseudo:pseudo withemail:email withbday:dateToString withpassword:password withweight:weight withheight:height];
+    [wbs createAccount:gender withPseudo:pseudo withEmail:email withBday:dateToString withPassword:password withWeight:weight withHeight:height];
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Bravo" message:@"Votre compte a bien été créer" preferredStyle:UIAlertControllerStyleAlert] ;
     
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault

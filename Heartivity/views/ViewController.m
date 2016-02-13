@@ -22,8 +22,6 @@
     NSString* errormsg ;
     WebServices* connect;
     Session* session;
-    
-    
 }
 
 @end
@@ -38,13 +36,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    session = [[Session alloc]init];
+    session = [Session new];
     labelError.text = @"";
-    connect = [[WebServices alloc ]init];
-    TableViewController* tab = [[TableViewController alloc]init];
- 
-    if ([session sessionExist]==true) {
-        [self.navigationController pushViewController:tab animated:YES];
+    
+    connect = [WebServices new];
+
+    if ([session sessionExist] == true) {
+        TableViewController* tableViewController = [TableViewController new];
+        [self.navigationController pushViewController:tableViewController animated:YES];
     }
 }
 
@@ -52,40 +51,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)onTouchConnect:(id)sender {
-    errormsg =@"Veuillez remplire tous les champs";
+    errormsg = @"Veuillez remplir tous les champs";
     
     email = inputEmail.text;
     password = inputPassword.text;
+    
     if ([email isEqual:@""]) {
         labelError.text= errormsg;
         [self.view endEditing:YES];
-    }else if ([password isEqual:@""]){
+    } else if ([password isEqual:@""]) {
         labelError.text = errormsg;
         [self.view endEditing:YES];
-
+    } else {
+        [connect getInfoUser:email withPassword:password withCompletion:^(BOOL connectionError) {
+            errormsg = @"L'identifiant ou le mot de passe est incorrecte.";
+            
+            if (connectionError) {
+                labelError.text= errormsg;
+                [self.view endEditing:YES];
+            } else {
+                TableViewController *tableViewController= [TableViewController new];
+                [self presentViewController:tableViewController animated:YES completion:nil];
+            }
+        }];
     }
-    else{
-        
-        [connect getInfoUser:email withpassword:password];
-        NSLog(@"yes");
-        if ([session sessionExist]==TRUE) {
-            NSLog(@"%@",@"true");
-        }else{
-            NSLog(@"%@",@"false");
-        }
-        //TableViewController *controller= [[TableViewController alloc]init];
-        //[self presentViewController:controller animated:YES completion:nil];
-        //labelError.text = @"LOL";
-    }
-    
-    
 }
 
 - (IBAction)onTouchCreatAccount:(id)sender {
-    //change controller
     CreateAccountViewController* newAccountPage = [CreateAccountViewController new];
-    //[self presentViewController:newAccountPage animated:YES completion:nil];
     [self.navigationController pushViewController:newAccountPage animated:YES];
 }
 
