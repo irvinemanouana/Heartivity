@@ -13,4 +13,9 @@
 -(void)createAccount:(NSString*)gender withpseudo:(NSString*)pseudo withemail:(NSString*)email withbday:(NSString*)birthday withpassword:(NSString*)password withweight:(int)weight withheight:(int)height;
 -(void)getInfoUser:(NSString*)email withpassword:(NSString*)password;
 -(NSDate*)convertStringToDate:(NSString*)StringDate;
+
+
+-(void)createEvents:(NSString*)title withdescription:(NSString*)description withId:(NSString*)id;
+-(void)getAllEvents;
+
 @end

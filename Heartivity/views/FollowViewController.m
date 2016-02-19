@@ -7,16 +7,37 @@
 //
 
 #import "FollowViewController.h"
+#import "Session.h"
+#import "Person.h"
 
 @interface FollowViewController ()
+{
+    Session* session;
+    Person* person;
+
+}
 
 @end
 
 @implementation FollowViewController
 
+@synthesize imcLabel;
+@synthesize heightLabel;
+@synthesize weightLabe;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    session = [[Session alloc]init];
+    person = [session  getUserdata];
+    CGFloat val = person.imc.floatValue;
+    CGFloat imc = floorf(val * 100);
+    NSLog(@"%f imc ",imc);
+    imcLabel.text =[NSString stringWithFormat:@"%f",imc];
+    heightLabel.text = person.height.stringValue;
+    weightLabe.text = person.weight.stringValue;
+    
 }
 
 - (void)didReceiveMemoryWarning {

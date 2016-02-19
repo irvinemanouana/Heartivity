@@ -9,9 +9,9 @@
 #import "ViewController.h"
 #import "CreateAccountViewController.h"
 #import "TableViewController.h"
-#import "FollowViewController.h"
 #import "WebServices.h"
 #import "Session.h"
+#import "Crypto.h"
 
 
 @interface ViewController ()
@@ -22,6 +22,7 @@
     NSString* errormsg ;
     WebServices* connect;
     Session* session;
+    Crypto* md5;
     
     
 }
@@ -39,6 +40,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     session = [[Session alloc]init];
+    md5 = [[Crypto alloc]init];
     labelError.text = @"";
     connect = [[WebServices alloc ]init];
     TableViewController* tab = [[TableViewController alloc]init];
@@ -56,7 +58,7 @@
     errormsg =@"Veuillez remplire tous les champs";
     
     email = inputEmail.text;
-    password = inputPassword.text;
+    password = [md5 md5:inputPassword.text];
     if ([email isEqual:@""]) {
         labelError.text= errormsg;
         [self.view endEditing:YES];

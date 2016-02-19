@@ -79,7 +79,8 @@
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
                                                               ViewController* controller = [ViewController new];
-                                                              [self presentViewController:controller animated:YES completion:nil];
+                                                              [self.navigationController pushViewController:controller animated:YES];
+                                                            
                                                           }];
     
     
