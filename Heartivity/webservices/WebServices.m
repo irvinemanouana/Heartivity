@@ -25,7 +25,8 @@
     return dateFromString;
 }
 
-- (void)createAccount:(NSString *)gender withPseudo:(NSString *)pseudo withEmail:(NSString *)email withBday:(NSString*)birthday withPassword:(NSString *)password withWeight:(int)weight withHeight:(int)height {    
+- (void)createAccount:(NSString *)gender withPseudo:(NSString *)pseudo withEmail:(NSString *)email withBday:(NSString*)birthday withPassword:(NSString *)password withWeight:(int)weight withHeight:(int)height {
+
     NSString* url = [NSString stringWithFormat:@"http://localhost:3000/user/%@/%@/%@/%@/%@/%d/%d",
                      gender,
                      pseudo,
@@ -106,10 +107,9 @@
         BOOL loginError = NO;
         
         if (!error) {
-            userSession = [[Session alloc]init];
+            userSession = [Session new];
             NSDictionary* jsonDictData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
 
-            NSLog(@"%@",[jsonDictData description]);
             
             Person *p  = [Person new];
             p.id       = [jsonDictData objectForKey:@"_id"];

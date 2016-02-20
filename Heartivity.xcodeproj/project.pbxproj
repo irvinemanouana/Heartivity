@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410E32CB1C7307D700ED77D0 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410E32C91C7307D700ED77D0 /* EventKit.framework */; };
+		410E32CC1C7307D700ED77D0 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410E32CA1C7307D700ED77D0 /* EventKitUI.framework */; };
+		410E32D01C73083400ED77D0 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E32CE1C73083400ED77D0 /* CalendarViewController.m */; };
+		410E32D11C73083400ED77D0 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410E32CF1C73083400ED77D0 /* CalendarViewController.xib */; };
+		412C78721C7880580071CA17 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412C78701C7880580071CA17 /* ProfileViewController.m */; };
+		412C78731C7880580071CA17 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412C78711C7880580071CA17 /* ProfileViewController.xib */; };
 		9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */; };
 		9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */; };
 		9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */; };
@@ -16,8 +22,6 @@
 		9D04668F1C6A9A6F00205F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466761C6A9A6F00205F26 /* LaunchScreen.storyboard */; };
 		9D0466921C6A9A6F00205F26 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */; };
 		9D0466931C6A9A6F00205F26 /* MenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */; };
-		9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */; };
-		9D0466951C6A9A6F00205F26 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */; };
 		9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466811C6A9A6F00205F26 /* TableViewCell.m */; };
 		9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466821C6A9A6F00205F26 /* TableViewCell.xib */; };
 		9D0466981C6A9A6F00205F26 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466841C6A9A6F00205F26 /* TableViewController.m */; };
@@ -113,6 +117,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		410E32C91C7307D700ED77D0 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		410E32CA1C7307D700ED77D0 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		410E32CD1C73083400ED77D0 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		410E32CE1C73083400ED77D0 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		410E32CF1C73083400ED77D0 /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		412C786F1C7880580071CA17 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		412C78701C7880580071CA17 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		412C78711C7880580071CA17 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewCell.h; sourceTree = "<group>"; };
 		9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewCell.m; sourceTree = "<group>"; };
 		9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
@@ -126,9 +138,6 @@
 		9D04667A1C6A9A6F00205F26 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewController.xib; sourceTree = "<group>"; };
-		9D04667D1C6A9A6F00205F26 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9D0466801C6A9A6F00205F26 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		9D0466811C6A9A6F00205F26 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		9D0466821C6A9A6F00205F26 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -188,12 +197,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410E32CB1C7307D700ED77D0 /* EventKit.framework in Frameworks */,
+				410E32CC1C7307D700ED77D0 /* EventKitUI.framework in Frameworks */,
 				9D342D651C67F5D5000F8366 /* CoreLocation.framework in Frameworks */,
 				9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9DE0D6691BF65FD600A08F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9E6741945D300542A356DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,12 +254,18 @@
 		9D3C684C1C63DA6200AEDFFF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				410E32CD1C73083400ED77D0 /* CalendarViewController.h */,
+				410E32CE1C73083400ED77D0 /* CalendarViewController.m */,
+				410E32CF1C73083400ED77D0 /* CalendarViewController.xib */,
 				9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */,
 				9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */,
 				9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */,
 				9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */,
 				9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */,
 				9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */,
+				412C786F1C7880580071CA17 /* ProfileViewController.h */,
+				412C78701C7880580071CA17 /* ProfileViewController.m */,
+				412C78711C7880580071CA17 /* ProfileViewController.xib */,
 				9D0466731C6A9A6F00205F26 /* FollowViewController.h */,
 				9D0466741C6A9A6F00205F26 /* FollowViewController.m */,
 				9D0466751C6A9A6F00205F26 /* FollowViewController.xib */,
@@ -249,9 +273,6 @@
 				9D04667A1C6A9A6F00205F26 /* MenuTableViewController.h */,
 				9D04667B1C6A9A6F00205F26 /* MenuTableViewController.m */,
 				9D04667C1C6A9A6F00205F26 /* MenuTableViewController.xib */,
-				9D04667D1C6A9A6F00205F26 /* ProfileViewController.h */,
-				9D04667E1C6A9A6F00205F26 /* ProfileViewController.m */,
-				9D04667F1C6A9A6F00205F26 /* ProfileViewController.xib */,
 				9D0466801C6A9A6F00205F26 /* TableViewCell.h */,
 				9D0466811C6A9A6F00205F26 /* TableViewCell.m */,
 				9D0466821C6A9A6F00205F26 /* TableViewCell.xib */,
@@ -286,6 +307,8 @@
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
+				410E32C91C7307D700ED77D0 /* EventKit.framework */,
+				410E32CA1C7307D700ED77D0 /* EventKitUI.framework */,
 				9D342D641C67F5D5000F8366 /* CoreLocation.framework */,
 				9DDA8A5A1C309346004E56BA /* HealthKit.framework */,
 				9DE0D6481BF65FD600A08F51 /* Heartivity */,
@@ -393,6 +416,7 @@
 			buildPhases = (
 				9DE0D65B1BF65FD600A08F51 /* Resources */,
 				9DE0D6841BF65FD600A08F51 /* Embed App Extensions */,
+				DF9E6741945D300542A356DB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -485,13 +509,14 @@
 				9D04668C1C6A9A6F00205F26 /* CreateAccountViewController.xib in Resources */,
 				9D3C685F1C63F89500AEDFFF /* WeighingScale.png in Resources */,
 				9D0ED1A71C050BD5006E4A4E /* icone_femme.png in Resources */,
+				410E32D11C73083400ED77D0 /* CalendarViewController.xib in Resources */,
 				9D0ED1AD1C050BD5006E4A4E /* icone_suivi.png in Resources */,
+				412C78731C7880580071CA17 /* ProfileViewController.xib in Resources */,
 				9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */,
 				9D3C685E1C63F89500AEDFFF /* UserProfile.png in Resources */,
 				9D04668E1C6A9A6F00205F26 /* FollowViewController.xib in Resources */,
 				9D0466991C6A9A6F00205F26 /* TableViewController.xib in Resources */,
 				9D0466931C6A9A6F00205F26 /* MenuTableViewController.xib in Resources */,
-				9D0466951C6A9A6F00205F26 /* ProfileViewController.xib in Resources */,
 				9D0ED1B11C051935006E4A4E /* logo_heartivity.png in Resources */,
 				9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */,
 				9D04669B1C6A9A6F00205F26 /* ViewController.xib in Resources */,
@@ -543,13 +568,14 @@
 				9D61F4161C6023570008E939 /* Session.m in Sources */,
 				9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */,
 				9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */,
+				412C78721C7880580071CA17 /* ProfileViewController.m in Sources */,
 				9D15ABD01C4A97F4000BE511 /* Person.m in Sources */,
 				9D0466921C6A9A6F00205F26 /* MenuTableViewController.m in Sources */,
+				410E32D01C73083400ED77D0 /* CalendarViewController.m in Sources */,
 				9D04668D1C6A9A6F00205F26 /* FollowViewController.m in Sources */,
 				9D0466981C6A9A6F00205F26 /* TableViewController.m in Sources */,
 				9D2810E71C10D6EC00F8244E /* WebServices.m in Sources */,
 				9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */,
-				9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */,
 				9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */,
 				9DE0D64B1BF65FD600A08F51 /* main.m in Sources */,
 			);

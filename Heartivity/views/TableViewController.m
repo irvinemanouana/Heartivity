@@ -12,6 +12,7 @@
 
 #import "ProfileViewController.h"
 #import "FollowViewController.h"
+#import "CalendarViewController.h"
 
 @interface TableViewController ()
 {
@@ -26,9 +27,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    menu = [NSMutableArray arrayWithObjects:@"Profil",@"Suivi",@"Calendrier",@"Défis",@"Communauté",nil];
-    imageArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"icone_homme.png"],[UIImage imageNamed:@"icone_suivi.png"],[UIImage imageNamed:@"icone_calendar.png"],[UIImage imageNamed:@"icone_défi.png"],[UIImage imageNamed:@"icone_communaute.png"], nil];
+    menu = [NSMutableArray arrayWithObjects:
+            @"Profil",
+            @"Suivi",
+            @"Calendrier",
+            @"Défis",
+            @"Communauté",
+            nil];
     
+    imageArray = [NSMutableArray arrayWithObjects:
+                  [UIImage imageNamed:@"icone_homme.png"],
+                  [UIImage imageNamed:@"icone_suivi.png"],
+                  [UIImage imageNamed:@"icone_calendar.png"],
+                  [UIImage imageNamed:@"icone_défi.png"],
+                  [UIImage imageNamed:@"icone_communaute.png"],
+                  nil];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Retour" style:UIBarButtonItemStylePlain target:nil action:nil];
    
     // Do any additional setup after loading the view from its nib.
 }
@@ -73,8 +88,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     long selectedRow = (long)indexPath.item;
-    NSLog(@"%ld", selectedRow);
-    
     switch (selectedRow) {
         case 0:
         {
@@ -91,6 +104,13 @@
             [self presentViewController:followPage animated:YES completion:nil];
             break;
         }
+        case 2:
+        {
+            NSLog(@"Go to calendrier");
+            CalendarViewController* calendarPage = [CalendarViewController new];
+            [self presentViewController:calendarPage animated:YES completion:nil];
+        }
+//            case 3:
             
         default:
             break;

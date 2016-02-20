@@ -2,32 +2,37 @@
 //  ProfileViewController.m
 //  Heartivity
 //
-//  Created by Manouana on 04/02/2016.
+//  Created by Soulier Antoine on 20/02/2016.
 //  Copyright © 2016 Manouana. All rights reserved.
 //
 
 #import "ProfileViewController.h"
 #import "Session.h"
 #import "Person.h"
+
 @interface ProfileViewController ()
 
 @end
 
 @implementation ProfileViewController
+@synthesize pseudo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /*Session* session = [[Session alloc]init];
-    if ([session sessionExist]==true) {
+    Session* session = [Session new];
+    
+    /* if ([session sessionExist]==true) {
      NSLog(@"%@",@"true");
-    }else{
-         NSLog(@"%@",@"false");
-    }*/
-    /*Person* p = [session getUserdata];
-    NSString* pseudo =p.pseudo;*/
-   
+     }else{
+     NSLog(@"%@",@"false");
+     }*/
+    Person* p = [session getUserdata];
+    pseudo.text = p.pseudo;
+    NSLog(@"In ProfileViewController");
+    
     //labelgender.text = p.gender;
+    
     // Do any additional setup after loading the view from its nib.
 }
 

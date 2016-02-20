@@ -21,8 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    menu = [NSMutableArray arrayWithObjects:@"Profil",@"Suivi",@"Calendrier",@"Défis",@"Communauté",nil];
-    imageArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"icone_homme.png"],[UIImage imageNamed:@"icone_suivi.png"],[UIImage imageNamed:@"icone_calendar.png"],[UIImage imageNamed:@"icone_défi.png"],[UIImage imageNamed:@"icone_communaute.png"], nil];
+    menu = [NSMutableArray arrayWithObjects:
+            @"Profil",
+            @"Suivi",
+            @"Calendrier",
+            @"Défis",
+            @"Communauté",
+            nil];
+    
+    imageArray = [NSMutableArray arrayWithObjects:
+                  [UIImage imageNamed:@"icone_homme.png"],
+                  [UIImage imageNamed:@"icone_suivi.png"],
+                  [UIImage imageNamed:@"icone_calendar.png"],
+                  [UIImage imageNamed:@"icone_défi.png"],
+                  [UIImage imageNamed:@"icone_communaute.png"],
+                  nil];
 }
 
 - (void)didReceiveMemoryWarning {

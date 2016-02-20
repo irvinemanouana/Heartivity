@@ -2,13 +2,15 @@
 //  ProfileViewController.h
 //  Heartivity
 //
-//  Created by Manouana on 04/02/2016.
+//  Created by Soulier Antoine on 20/02/2016.
 //  Copyright © 2016 Manouana. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ProfileViewController : ViewController
+@interface ProfileViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *pseudo;
+
 
 
 @end

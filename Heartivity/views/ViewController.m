@@ -41,10 +41,10 @@
     
     connect = [WebServices new];
 
-    if ([session sessionExist] == true) {
+    /* if ([session sessionExist] == true) {
         TableViewController* tableViewController = [TableViewController new];
         [self.navigationController pushViewController:tableViewController animated:YES];
-    }
+    } */
 }
 
 - (void)didReceiveMemoryWarning {
