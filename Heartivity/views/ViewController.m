@@ -75,15 +75,9 @@
     else{
         
         [connect getInfoUser:email withpassword:password];
-        NSLog(@"yes");
-        if ([session sessionExist]==TRUE) {
-            NSLog(@"%@",@"true");
-        }else{
-            NSLog(@"%@",@"false");
-        }
-        //TableViewController *controller= [[TableViewController alloc]init];
-        //[self presentViewController:controller animated:YES completion:nil];
-        //labelError.text = @"LOL";
+        TableViewController *controller= [[TableViewController alloc]init];
+        [self.navigationController pushViewController:controller animated:YES];
+       
     }
     
     
