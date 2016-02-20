@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <HealthKit/HealthKit.h>
-
+#import <MapKit/MapKit.h>
 
 @interface AppDelegate ()
     @property (strong, nonatomic) HKHealthStore *healthStore;
@@ -35,6 +35,7 @@
     w.rootViewController = nv;
     self.window = w;
     [self.window makeKeyAndVisible];
+    [CLLocationManager locationServicesEnabled];
     [launchOptions valueForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
     {

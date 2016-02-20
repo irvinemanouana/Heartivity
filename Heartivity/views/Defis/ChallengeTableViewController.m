@@ -1,30 +1,30 @@
 //
-//  AlertTableViewController.m
+//  ChallengeTableViewController.m
 //  Heartivity
 //
-//  Created by Manouana on 19/02/2016.
+//  Created by Manouana on 20/02/2016.
 //  Copyright © 2016 Manouana. All rights reserved.
 //
 
-#import "AlertTableViewController.h"
-#import "AlertTableViewCell.h"
-#import "CreateAlertViewController.h"
+#import "ChallengeTableViewController.h"
+#import "ChallengeTableViewCell.h"
+#import "ChronoViewController.h"
 
-@interface AlertTableViewController ()
+@interface ChallengeTableViewController ()
 {
-    NSArray *tableData;
-    NSArray* notifications;
+    NSMutableArray* workout;
+    NSMutableArray* img;
 }
 @end
 
-@implementation AlertTableViewController
+@implementation ChallengeTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    notifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Plus-48.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(createAlert:)];
-    self.navigationItem.rightBarButtonItem = barButton;
-    [self.view setNeedsDisplay];
+   
+    workout= [NSMutableArray arrayWithObjects:@"Squat",@"Push up",@"Running",nil];
+    img =[NSMutableArray arrayWithObjects:[UIImage imageNamed:@"squat.png"],[UIImage imageNamed:@"push.jpg"],[UIImage imageNamed:@"bgrunning.jpg"],nil];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -36,12 +36,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(IBAction)createAlert:(id)sender{
-    CreateAlertViewController* alert = [[CreateAlertViewController alloc]init];
-    [self.navigationController pushViewController:alert animated:YES];
-
-}
-
 
 #pragma mark - Table view data source
 
@@ -50,37 +44,41 @@
     return 1;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-
-    return [notifications count];
+     return [workout count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AlertTableViewCell *cell =(AlertTableViewCell*) [tableView dequeueReusableCellWithIdentifier:@"AlertTableViewCell"];
+    static NSString *simpleTableIdentifier = @"ChallengeTableViewCell";
+    ChallengeTableViewCell *cell = (ChallengeTableViewCell*)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    
-    // Configure the cell...
-    if (cell == nil)
-    {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AlertTableViewCell" owner:self options:nil];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:simpleTableIdentifier owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-   
-    UILocalNotification* localnot = [notifications objectAtIndex:indexPath.row];
-    NSDateFormatter* dateFormat = [[NSDateFormatter alloc]init];
-    //For Fr format
-    [dateFormat setDateFormat:@"dd-MM-yyyy HH:mm:ss"];
-   
-    cell.Titletext.text= localnot.alertBody;
-    cell.Datetext.text = [dateFormat stringFromDate:localnot.fireDate];
+    
+    cell.backgroud.image = [img objectAtIndex:indexPath.row];
+    cell.WorkoutLabel.text =[workout objectAtIndex:indexPath.row];
+    
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 150;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ChronoViewController* chrono = [[ChronoViewController alloc]init];
+    [self.navigationController pushViewController:chrono animated:YES];
+   /* ChallengeTableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString* cellValue = cell.WorkoutLabel.text;
+    if ([cellValue isEqualToString:@"Push up"]) {
+        ChronoViewController* even = [[ChronoViewController alloc]init];
+        [self.navigationController pushViewController:even animated:YES];
+    }*/
+
 }
 
 

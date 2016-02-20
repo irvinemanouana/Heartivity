@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface CreateAlertViewController : UIViewController
+@interface CreateAlertViewController : UIViewController<CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *LibelleTxt;
 @property (weak, nonatomic) IBOutlet UIDatePicker *DateRappel;
 -(IBAction)save:(id)sender;
+@property (weak, nonatomic) IBOutlet MKMapView *mapview;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong,nonatomic)CLLocation* location;
 @end

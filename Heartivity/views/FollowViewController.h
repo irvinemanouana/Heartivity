@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 
-@interface FollowViewController : ViewController
+@interface FollowViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *imcLabel;
 @property (weak, nonatomic) IBOutlet UILabel *weightLabe;
 @property (weak, nonatomic) IBOutlet UILabel *heightLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

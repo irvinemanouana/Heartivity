@@ -16,6 +16,8 @@
 #import "EventTableViewController.h"
 #import "CreateAlertViewController.h"
 #import "AlertTableViewController.h"
+#import "ChallengeTableViewController.h"
+
 @interface TableViewController ()
 {
     NSMutableArray* menu;
@@ -88,7 +90,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString* cellValue = cell.TitleCell.text;
-    NSLog(@"%@",cellValue);
+
     if ([cellValue isEqualToString:@"Profil"]) {
         ProfileViewController* profil = [[ProfileViewController alloc]init];
         [self.navigationController pushViewController:profil animated:YES];
@@ -99,7 +101,8 @@
         AlertTableViewController* alert = [[AlertTableViewController alloc]init];
         [self.navigationController pushViewController:alert animated:YES];
     }else if([cellValue isEqualToString:@"Défis"]){
-        NSLog(@"%@",cellValue);
+        ChallengeTableViewController* even = [[ChallengeTableViewController alloc]init];
+        [self.navigationController pushViewController:even animated:YES];
     }else if([cellValue isEqualToString:@"Communauté"]){
         EventTableViewController* even = [[EventTableViewController alloc]init];
         [self.navigationController pushViewController:even animated:YES];

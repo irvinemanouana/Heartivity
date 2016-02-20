@@ -64,6 +64,17 @@
 		9DB562B11C77E76E005CA0F7 /* Logout-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B01C77E76E005CA0F7 /* Logout-48.png */; };
 		9DB562B41C77E93A005CA0F7 /* Calendar-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B21C77E93A005CA0F7 /* Calendar-128.png */; };
 		9DB562B51C77E93A005CA0F7 /* Delete-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B31C77E93A005CA0F7 /* Delete-128.png */; };
+		9DCC018A1C7869950026FB5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCC01891C7869950026FB5C /* MapKit.framework */; };
+		9DCC018C1C7873E50026FB5C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCC018B1C7873E50026FB5C /* AddressBookUI.framework */; };
+		9DCC01911C7883270026FB5C /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC018F1C7883270026FB5C /* ChallengeTableViewController.m */; };
+		9DCC01921C7883270026FB5C /* ChallengeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC01901C7883270026FB5C /* ChallengeTableViewController.xib */; };
+		9DCC01961C7883A60026FB5C /* ChallengeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC01941C7883A60026FB5C /* ChallengeTableViewCell.m */; };
+		9DCC01971C7883A60026FB5C /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC01951C7883A60026FB5C /* ChallengeTableViewCell.xib */; };
+		9DCC01991C7885FA0026FB5C /* squat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC01981C7885FA0026FB5C /* squat.png */; };
+		9DCC019D1C7886EA0026FB5C /* push.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC019C1C7886EA0026FB5C /* push.jpg */; };
+		9DCC019F1C789D260026FB5C /* bgrunning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC019E1C789D260026FB5C /* bgrunning.jpg */; };
+		9DCC01A31C789FD00026FB5C /* ChronoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC01A11C789FD00026FB5C /* ChronoViewController.m */; };
+		9DCC01A41C789FD00026FB5C /* ChronoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC01A21C789FD00026FB5C /* ChronoViewController.xib */; };
 		9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA8A5A1C309346004E56BA /* HealthKit.framework */; };
 		9DE0D64B1BF65FD600A08F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64A1BF65FD600A08F51 /* main.m */; };
 		9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */; };
@@ -184,6 +195,20 @@
 		9DB562B21C77E93A005CA0F7 /* Calendar-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-128.png"; sourceTree = "<group>"; };
 		9DB562B31C77E93A005CA0F7 /* Delete-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete-128.png"; sourceTree = "<group>"; };
 		9DB95D7B1BF7BB8C0032911C /* Heartivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Heartivity.entitlements; sourceTree = "<group>"; };
+		9DCC01891C7869950026FB5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9DCC018B1C7873E50026FB5C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		9DCC018E1C7883270026FB5C /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewController.h; sourceTree = "<group>"; };
+		9DCC018F1C7883270026FB5C /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewController.m; sourceTree = "<group>"; };
+		9DCC01901C7883270026FB5C /* ChallengeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeTableViewController.xib; sourceTree = "<group>"; };
+		9DCC01931C7883A60026FB5C /* ChallengeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewCell.h; sourceTree = "<group>"; };
+		9DCC01941C7883A60026FB5C /* ChallengeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewCell.m; sourceTree = "<group>"; };
+		9DCC01951C7883A60026FB5C /* ChallengeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeTableViewCell.xib; sourceTree = "<group>"; };
+		9DCC01981C7885FA0026FB5C /* squat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squat.png; path = Heartivity/drawlables/squat.png; sourceTree = SOURCE_ROOT; };
+		9DCC019C1C7886EA0026FB5C /* push.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = push.jpg; sourceTree = "<group>"; };
+		9DCC019E1C789D260026FB5C /* bgrunning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgrunning.jpg; sourceTree = "<group>"; };
+		9DCC01A01C789FD00026FB5C /* ChronoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChronoViewController.h; sourceTree = "<group>"; };
+		9DCC01A11C789FD00026FB5C /* ChronoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChronoViewController.m; sourceTree = "<group>"; };
+		9DCC01A21C789FD00026FB5C /* ChronoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChronoViewController.xib; sourceTree = "<group>"; };
 		9DDA8A5A1C309346004E56BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9DE0D6461BF65FD600A08F51 /* Heartivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heartivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE0D64A1BF65FD600A08F51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -221,6 +246,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCC018C1C7873E50026FB5C /* AddressBookUI.framework in Frameworks */,
+				9DCC018A1C7869950026FB5C /* MapKit.framework in Frameworks */,
 				9D342D651C67F5D5000F8366 /* CoreLocation.framework in Frameworks */,
 				9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */,
 			);
@@ -239,6 +266,9 @@
 		9D0ED1971C050BD5006E4A4E /* drawlables */ = {
 			isa = PBXGroup;
 			children = (
+				9DCC019E1C789D260026FB5C /* bgrunning.jpg */,
+				9DCC019C1C7886EA0026FB5C /* push.jpg */,
+				9DCC01981C7885FA0026FB5C /* squat.png */,
 				9DB562B01C77E76E005CA0F7 /* Logout-48.png */,
 				9DB562AE1C77E60C005CA0F7 /* Plus-48.png */,
 				9DB562B21C77E93A005CA0F7 /* Calendar-128.png */,
@@ -274,6 +304,7 @@
 		9D3C684C1C63DA6200AEDFFF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9DCC018D1C7882FC0026FB5C /* Defis */,
 				9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */,
 				9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */,
 				9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */,
@@ -327,9 +358,27 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		9DCC018D1C7882FC0026FB5C /* Defis */ = {
+			isa = PBXGroup;
+			children = (
+				9DCC018E1C7883270026FB5C /* ChallengeTableViewController.h */,
+				9DCC018F1C7883270026FB5C /* ChallengeTableViewController.m */,
+				9DCC01901C7883270026FB5C /* ChallengeTableViewController.xib */,
+				9DCC01931C7883A60026FB5C /* ChallengeTableViewCell.h */,
+				9DCC01941C7883A60026FB5C /* ChallengeTableViewCell.m */,
+				9DCC01951C7883A60026FB5C /* ChallengeTableViewCell.xib */,
+				9DCC01A01C789FD00026FB5C /* ChronoViewController.h */,
+				9DCC01A11C789FD00026FB5C /* ChronoViewController.m */,
+				9DCC01A21C789FD00026FB5C /* ChronoViewController.xib */,
+			);
+			path = Defis;
+			sourceTree = "<group>";
+		};
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
+				9DCC018B1C7873E50026FB5C /* AddressBookUI.framework */,
+				9DCC01891C7869950026FB5C /* MapKit.framework */,
 				9DB562A41C77B6AB005CA0F7 /* AlertTableViewController.h */,
 				9DB562A51C77B6AB005CA0F7 /* AlertTableViewController.m */,
 				9DB562A61C77B6AB005CA0F7 /* AlertTableViewController.xib */,
@@ -526,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCC019F1C789D260026FB5C /* bgrunning.jpg in Resources */,
 				9DB562A81C77B6AB005CA0F7 /* AlertTableViewController.xib in Resources */,
 				9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */,
 				9D0ED1A41C050BD5006E4A4E /* icone_défi.png in Resources */,
@@ -536,6 +586,7 @@
 				9D0ED19E1C050BD5006E4A4E /* icone_calendar.png in Resources */,
 				9DE653681C70D205005F7EB1 /* CreateEventViewController.xib in Resources */,
 				9DA91AE11C752DB4001B6C4B /* background2.png in Resources */,
+				9DCC01991C7885FA0026FB5C /* squat.png in Resources */,
 				9D3F9D6A1C0B529200DC5EFA /* background.jpg in Resources */,
 				9D536E0A1C73BEBA00DCC1A2 /* CreateAlertViewController.xib in Resources */,
 				9D04668F1C6A9A6F00205F26 /* LaunchScreen.storyboard in Resources */,
@@ -544,8 +595,10 @@
 				9D3C685F1C63F89500AEDFFF /* WeighingScale.png in Resources */,
 				9DB562B51C77E93A005CA0F7 /* Delete-128.png in Resources */,
 				9DE6535C1C70B736005F7EB1 /* EventTableViewCell.xib in Resources */,
+				9DCC019D1C7886EA0026FB5C /* push.jpg in Resources */,
 				9D0ED1A71C050BD5006E4A4E /* icone_femme.png in Resources */,
 				9D0ED1AD1C050BD5006E4A4E /* icone_suivi.png in Resources */,
+				9DCC01A41C789FD00026FB5C /* ChronoViewController.xib in Resources */,
 				9D3C685E1C63F89500AEDFFF /* UserProfile.png in Resources */,
 				9D04668E1C6A9A6F00205F26 /* FollowViewController.xib in Resources */,
 				9D0466991C6A9A6F00205F26 /* TableViewController.xib in Resources */,
@@ -553,7 +606,9 @@
 				9D0ED1B11C051935006E4A4E /* logo_heartivity.png in Resources */,
 				9DB562AF1C77E60C005CA0F7 /* Plus-48.png in Resources */,
 				9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */,
+				9DCC01971C7883A60026FB5C /* ChallengeTableViewCell.xib in Resources */,
 				9DB562B11C77E76E005CA0F7 /* Logout-48.png in Resources */,
+				9DCC01921C7883270026FB5C /* ChallengeTableViewController.xib in Resources */,
 				9D04669B1C6A9A6F00205F26 /* ViewController.xib in Resources */,
 				9D0ED1AA1C050BD5006E4A4E /* icone_homme.png in Resources */,
 				9D3C68611C63F8A100AEDFFF /* MeasuringTape.png in Resources */,
@@ -605,6 +660,8 @@
 				9D61F4161C6023570008E939 /* Session.m in Sources */,
 				9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */,
 				9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */,
+				9DCC01961C7883A60026FB5C /* ChallengeTableViewCell.m in Sources */,
+				9DCC01911C7883270026FB5C /* ChallengeTableViewController.m in Sources */,
 				9D536E091C73BEBA00DCC1A2 /* CreateAlertViewController.m in Sources */,
 				9DB562AC1C77BA29005CA0F7 /* AlertTableViewCell.m in Sources */,
 				9D15ABD01C4A97F4000BE511 /* Person.m in Sources */,
@@ -614,6 +671,7 @@
 				9D2810E71C10D6EC00F8244E /* WebServices.m in Sources */,
 				9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */,
 				9DE653671C70D205005F7EB1 /* CreateEventViewController.m in Sources */,
+				9DCC01A31C789FD00026FB5C /* ChronoViewController.m in Sources */,
 				9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */,
 				9DB562A71C77B6AB005CA0F7 /* AlertTableViewController.m in Sources */,
 				9DE0D64B1BF65FD600A08F51 /* main.m in Sources */,
