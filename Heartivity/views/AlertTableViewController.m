@@ -2,15 +2,18 @@
 //  AlertTableViewController.m
 //  Heartivity
 //
-//  Created by Manouana on 18/02/2016.
+//  Created by Manouana on 19/02/2016.
 //  Copyright © 2016 Manouana. All rights reserved.
 //
 
 #import "AlertTableViewController.h"
-#import "AlertCellTableViewCell.h"
+#import "AlertTableViewCell.h"
+#import "CreateAlertViewController.h"
+
 @interface AlertTableViewController ()
 {
-    NSArray* oldNotifications;
+    NSArray *tableData;
+    NSArray* notifications;
 }
 @end
 
@@ -18,9 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIApplication* objApp = [UIApplication sharedApplication];
-    oldNotifications = [objApp scheduledLocalNotifications];
-     NSLog(@"oldNotifications:%@", oldNotifications);
+    notifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Plus-48.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(createAlert:)];
+    self.navigationItem.rightBarButtonItem = barButton;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,34 +36,50 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(IBAction)createAlert:(id)sender{
+    CreateAlertViewController* alert = [[CreateAlertViewController alloc]init];
+    [self.navigationController pushViewController:alert animated:YES];
+
+}
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//warning Incomplete implementation, return the number of sections
+//#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//warning Incomplete implementation, return the number of rows
-    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];;
+//#warning Incomplete implementation, return the number of rows
+
+    return [notifications count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AlertCellTableViewCell *cell = (AlertCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AlertCellTableViewCell" forIndexPath:indexPath];
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AlertCellTableViewCell" owner:self options:nil];
+    AlertTableViewCell *cell =(AlertTableViewCell*) [tableView dequeueReusableCellWithIdentifier:@"AlertTableViewCell"];
+    
+    
+    // Configure the cell...
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AlertTableViewCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-    // Configure the cell...
-    
-    NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
-    
-    // Display notification info
-    [cell.alertLibelle setText:localNotification.alertBody];
-    //[cell.detailTextLabel setText:[localNotification.fireDate description]];
+   
+    UILocalNotification* localnot = [notifications objectAtIndex:indexPath.row];
+    NSDateFormatter* dateFormat = [[NSDateFormatter alloc]init];
+    //For Fr format
+    [dateFormat setDateFormat:@"dd-MM-yyyy HH:mm:ss"];
+   
+    cell.Titletext.text= localnot.alertBody;
+    cell.Datetext.text = [dateFormat stringFromDate:localnot.fireDate];
     return cell;
 }
 

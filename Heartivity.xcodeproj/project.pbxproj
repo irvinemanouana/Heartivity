@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */; };
-		9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */; };
 		9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */; };
 		9D04668C1C6A9A6F00205F26 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */; };
 		9D04668D1C6A9A6F00205F26 /* FollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0466741C6A9A6F00205F26 /* FollowViewController.m */; };
@@ -44,8 +42,6 @@
 		9D0ED1B21C051935006E4A4E /* logo_heartivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1B01C051935006E4A4E /* logo_heartivity.png */; };
 		9D0ED1B31C051935006E4A4E /* logo_heartivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0ED1B01C051935006E4A4E /* logo_heartivity.png */; };
 		9D15ABD01C4A97F4000BE511 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D15ABCF1C4A97F4000BE511 /* Person.m */; };
-		9D21EE7C1C7671E8000DC99C /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D21EE7A1C7671E8000DC99C /* AlertTableViewController.m */; };
-		9D21EE7D1C7671E8000DC99C /* AlertTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D21EE7B1C7671E8000DC99C /* AlertTableViewController.xib */; };
 		9D2810E71C10D6EC00F8244E /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2810E61C10D6EC00F8244E /* WebServices.m */; };
 		9D342D631C67E808000F8366 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D342D621C67E808000F8366 /* right.png */; };
 		9D342D651C67F5D5000F8366 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D342D641C67F5D5000F8366 /* CoreLocation.framework */; };
@@ -58,10 +54,16 @@
 		9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */; };
 		9D536E091C73BEBA00DCC1A2 /* CreateAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D536E071C73BEBA00DCC1A2 /* CreateAlertViewController.m */; };
 		9D536E0A1C73BEBA00DCC1A2 /* CreateAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D536E081C73BEBA00DCC1A2 /* CreateAlertViewController.xib */; };
-		9D586C0C1C7677ED0066F599 /* AlertCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D586C0A1C7677ED0066F599 /* AlertCellTableViewCell.m */; };
-		9D586C0D1C7677ED0066F599 /* AlertCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D586C0B1C7677ED0066F599 /* AlertCellTableViewCell.xib */; };
 		9D61F4161C6023570008E939 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61F4151C6023570008E939 /* Session.m */; };
 		9DA91AE11C752DB4001B6C4B /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA91AE01C752DB4001B6C4B /* background2.png */; };
+		9DB562A71C77B6AB005CA0F7 /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB562A51C77B6AB005CA0F7 /* AlertTableViewController.m */; };
+		9DB562A81C77B6AB005CA0F7 /* AlertTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562A61C77B6AB005CA0F7 /* AlertTableViewController.xib */; };
+		9DB562AC1C77BA29005CA0F7 /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB562AA1C77BA29005CA0F7 /* AlertTableViewCell.m */; };
+		9DB562AD1C77BA29005CA0F7 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562AB1C77BA29005CA0F7 /* AlertTableViewCell.xib */; };
+		9DB562AF1C77E60C005CA0F7 /* Plus-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562AE1C77E60C005CA0F7 /* Plus-48.png */; };
+		9DB562B11C77E76E005CA0F7 /* Logout-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B01C77E76E005CA0F7 /* Logout-48.png */; };
+		9DB562B41C77E93A005CA0F7 /* Calendar-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B21C77E93A005CA0F7 /* Calendar-128.png */; };
+		9DB562B51C77E93A005CA0F7 /* Delete-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562B31C77E93A005CA0F7 /* Delete-128.png */; };
 		9DDA8A5B1C309346004E56BA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA8A5A1C309346004E56BA /* HealthKit.framework */; };
 		9DE0D64B1BF65FD600A08F51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64A1BF65FD600A08F51 /* main.m */; };
 		9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D64D1BF65FD600A08F51 /* AppDelegate.m */; };
@@ -125,9 +127,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewCell.h; sourceTree = "<group>"; };
-		9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewCell.m; sourceTree = "<group>"; };
-		9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
 		9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 		9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
@@ -156,9 +155,6 @@
 		9D0ED1B01C051935006E4A4E /* logo_heartivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_heartivity.png; sourceTree = "<group>"; };
 		9D15ABCE1C4A97F4000BE511 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		9D15ABCF1C4A97F4000BE511 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		9D21EE791C7671E8000DC99C /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewController.h; sourceTree = "<group>"; };
-		9D21EE7A1C7671E8000DC99C /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewController.m; sourceTree = "<group>"; };
-		9D21EE7B1C7671E8000DC99C /* AlertTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTableViewController.xib; sourceTree = "<group>"; };
 		9D2810E51C10D6EC00F8244E /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
 		9D2810E61C10D6EC00F8244E /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
 		9D342D621C67E808000F8366 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
@@ -174,12 +170,19 @@
 		9D536E061C73BEBA00DCC1A2 /* CreateAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlertViewController.h; sourceTree = "<group>"; };
 		9D536E071C73BEBA00DCC1A2 /* CreateAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlertViewController.m; sourceTree = "<group>"; };
 		9D536E081C73BEBA00DCC1A2 /* CreateAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAlertViewController.xib; sourceTree = "<group>"; };
-		9D586C091C7677ED0066F599 /* AlertCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCellTableViewCell.h; sourceTree = "<group>"; };
-		9D586C0A1C7677ED0066F599 /* AlertCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertCellTableViewCell.m; sourceTree = "<group>"; };
-		9D586C0B1C7677ED0066F599 /* AlertCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertCellTableViewCell.xib; sourceTree = "<group>"; };
 		9D61F4141C6023570008E939 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		9D61F4151C6023570008E939 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
 		9DA91AE01C752DB4001B6C4B /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		9DB562A41C77B6AB005CA0F7 /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertTableViewController.h; path = Heartivity/views/AlertTableViewController.h; sourceTree = "<group>"; };
+		9DB562A51C77B6AB005CA0F7 /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertTableViewController.m; path = Heartivity/views/AlertTableViewController.m; sourceTree = "<group>"; };
+		9DB562A61C77B6AB005CA0F7 /* AlertTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertTableViewController.xib; path = Heartivity/views/AlertTableViewController.xib; sourceTree = "<group>"; };
+		9DB562A91C77BA29005CA0F7 /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
+		9DB562AA1C77BA29005CA0F7 /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
+		9DB562AB1C77BA29005CA0F7 /* AlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		9DB562AE1C77E60C005CA0F7 /* Plus-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plus-48.png"; sourceTree = "<group>"; };
+		9DB562B01C77E76E005CA0F7 /* Logout-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logout-48.png"; sourceTree = "<group>"; };
+		9DB562B21C77E93A005CA0F7 /* Calendar-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-128.png"; sourceTree = "<group>"; };
+		9DB562B31C77E93A005CA0F7 /* Delete-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete-128.png"; sourceTree = "<group>"; };
 		9DB95D7B1BF7BB8C0032911C /* Heartivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Heartivity.entitlements; sourceTree = "<group>"; };
 		9DDA8A5A1C309346004E56BA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9DE0D6461BF65FD600A08F51 /* Heartivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heartivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +239,10 @@
 		9D0ED1971C050BD5006E4A4E /* drawlables */ = {
 			isa = PBXGroup;
 			children = (
+				9DB562B01C77E76E005CA0F7 /* Logout-48.png */,
+				9DB562AE1C77E60C005CA0F7 /* Plus-48.png */,
+				9DB562B21C77E93A005CA0F7 /* Calendar-128.png */,
+				9DB562B31C77E93A005CA0F7 /* Delete-128.png */,
 				9DA91AE01C752DB4001B6C4B /* background2.png */,
 				9D342D621C67E808000F8366 /* right.png */,
 				9D3F9D6D1C0B634500DC5EFA /* buttonbg.png */,
@@ -267,9 +274,6 @@
 		9D3C684C1C63DA6200AEDFFF /* views */ = {
 			isa = PBXGroup;
 			children = (
-				9D04666D1C6A9A6F00205F26 /* CalendarViewCell.h */,
-				9D04666E1C6A9A6F00205F26 /* CalendarViewCell.m */,
-				9D04666F1C6A9A6F00205F26 /* CalendarViewCell.xib */,
 				9D0466701C6A9A6F00205F26 /* CreateAccountViewController.h */,
 				9D0466711C6A9A6F00205F26 /* CreateAccountViewController.m */,
 				9D0466721C6A9A6F00205F26 /* CreateAccountViewController.xib */,
@@ -301,12 +305,6 @@
 				9D536E061C73BEBA00DCC1A2 /* CreateAlertViewController.h */,
 				9D536E071C73BEBA00DCC1A2 /* CreateAlertViewController.m */,
 				9D536E081C73BEBA00DCC1A2 /* CreateAlertViewController.xib */,
-				9D21EE791C7671E8000DC99C /* AlertTableViewController.h */,
-				9D21EE7A1C7671E8000DC99C /* AlertTableViewController.m */,
-				9D21EE7B1C7671E8000DC99C /* AlertTableViewController.xib */,
-				9D586C091C7677ED0066F599 /* AlertCellTableViewCell.h */,
-				9D586C0A1C7677ED0066F599 /* AlertCellTableViewCell.m */,
-				9D586C0B1C7677ED0066F599 /* AlertCellTableViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -332,6 +330,12 @@
 		9DE0D63D1BF65FD500A08F51 = {
 			isa = PBXGroup;
 			children = (
+				9DB562A41C77B6AB005CA0F7 /* AlertTableViewController.h */,
+				9DB562A51C77B6AB005CA0F7 /* AlertTableViewController.m */,
+				9DB562A61C77B6AB005CA0F7 /* AlertTableViewController.xib */,
+				9DB562A91C77BA29005CA0F7 /* AlertTableViewCell.h */,
+				9DB562AA1C77BA29005CA0F7 /* AlertTableViewCell.m */,
+				9DB562AB1C77BA29005CA0F7 /* AlertTableViewCell.xib */,
 				9D342D641C67F5D5000F8366 /* CoreLocation.framework */,
 				9DDA8A5A1C309346004E56BA /* HealthKit.framework */,
 				9DE0D6481BF65FD600A08F51 /* Heartivity */,
@@ -522,12 +526,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D586C0D1C7677ED0066F599 /* AlertCellTableViewCell.xib in Resources */,
-				9D21EE7D1C7671E8000DC99C /* AlertTableViewController.xib in Resources */,
+				9DB562A81C77B6AB005CA0F7 /* AlertTableViewController.xib in Resources */,
 				9D3F9D6E1C0B634500DC5EFA /* buttonbg.png in Resources */,
 				9D0ED1A41C050BD5006E4A4E /* icone_défi.png in Resources */,
 				9DE653611C70B771005F7EB1 /* EventTableViewController.xib in Resources */,
 				9D342D631C67E808000F8366 /* right.png in Resources */,
+				9DB562B41C77E93A005CA0F7 /* Calendar-128.png in Resources */,
 				9D0ED1A11C050BD5006E4A4E /* icone_communaute.png in Resources */,
 				9D0ED19E1C050BD5006E4A4E /* icone_calendar.png in Resources */,
 				9DE653681C70D205005F7EB1 /* CreateEventViewController.xib in Resources */,
@@ -538,19 +542,22 @@
 				9D3F9D6C1C0B584300DC5EFA /* Running-l.jpg in Resources */,
 				9D04668C1C6A9A6F00205F26 /* CreateAccountViewController.xib in Resources */,
 				9D3C685F1C63F89500AEDFFF /* WeighingScale.png in Resources */,
+				9DB562B51C77E93A005CA0F7 /* Delete-128.png in Resources */,
 				9DE6535C1C70B736005F7EB1 /* EventTableViewCell.xib in Resources */,
 				9D0ED1A71C050BD5006E4A4E /* icone_femme.png in Resources */,
 				9D0ED1AD1C050BD5006E4A4E /* icone_suivi.png in Resources */,
-				9D04668A1C6A9A6F00205F26 /* CalendarViewCell.xib in Resources */,
 				9D3C685E1C63F89500AEDFFF /* UserProfile.png in Resources */,
 				9D04668E1C6A9A6F00205F26 /* FollowViewController.xib in Resources */,
 				9D0466991C6A9A6F00205F26 /* TableViewController.xib in Resources */,
 				9D0466951C6A9A6F00205F26 /* ProfileViewController.xib in Resources */,
 				9D0ED1B11C051935006E4A4E /* logo_heartivity.png in Resources */,
+				9DB562AF1C77E60C005CA0F7 /* Plus-48.png in Resources */,
 				9D0466971C6A9A6F00205F26 /* TableViewCell.xib in Resources */,
+				9DB562B11C77E76E005CA0F7 /* Logout-48.png in Resources */,
 				9D04669B1C6A9A6F00205F26 /* ViewController.xib in Resources */,
 				9D0ED1AA1C050BD5006E4A4E /* icone_homme.png in Resources */,
 				9D3C68611C63F8A100AEDFFF /* MeasuringTape.png in Resources */,
+				9DB562AD1C77BA29005CA0F7 /* AlertTableViewCell.xib in Resources */,
 				9DE0D6561BF65FD600A08F51 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,10 +603,10 @@
 				9D377A201C6FFC2D006E5246 /* Crypto.m in Sources */,
 				9D04669A1C6A9A6F00205F26 /* ViewController.m in Sources */,
 				9D61F4161C6023570008E939 /* Session.m in Sources */,
-				9D586C0C1C7677ED0066F599 /* AlertCellTableViewCell.m in Sources */,
 				9D0466961C6A9A6F00205F26 /* TableViewCell.m in Sources */,
 				9D04668B1C6A9A6F00205F26 /* CreateAccountViewController.m in Sources */,
 				9D536E091C73BEBA00DCC1A2 /* CreateAlertViewController.m in Sources */,
+				9DB562AC1C77BA29005CA0F7 /* AlertTableViewCell.m in Sources */,
 				9D15ABD01C4A97F4000BE511 /* Person.m in Sources */,
 				9DE653601C70B771005F7EB1 /* EventTableViewController.m in Sources */,
 				9D04668D1C6A9A6F00205F26 /* FollowViewController.m in Sources */,
@@ -608,8 +615,7 @@
 				9DE0D64E1BF65FD600A08F51 /* AppDelegate.m in Sources */,
 				9DE653671C70D205005F7EB1 /* CreateEventViewController.m in Sources */,
 				9D0466941C6A9A6F00205F26 /* ProfileViewController.m in Sources */,
-				9D21EE7C1C7671E8000DC99C /* AlertTableViewController.m in Sources */,
-				9D0466891C6A9A6F00205F26 /* CalendarViewCell.m in Sources */,
+				9DB562A71C77B6AB005CA0F7 /* AlertTableViewController.m in Sources */,
 				9DE0D64B1BF65FD600A08F51 /* main.m in Sources */,
 				9DE6535B1C70B736005F7EB1 /* EventTableViewCell.m in Sources */,
 			);

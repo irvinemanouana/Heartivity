@@ -30,11 +30,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"MeasuringTape.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(logout:)];
+    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Logout-48.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(logout:)];
+    self.navigationItem.title = @"Heartivity";
+    self.navigationItem.hidesBackButton=TRUE;
     self.navigationItem.rightBarButtonItem = barButton;
+  
 
     menu = [NSMutableArray arrayWithObjects:@"Profil",@"Suivi",@"Calendrier",@"Défis",@"Communauté",nil];
-     subTitle = [NSMutableArray arrayWithObjects:@"Vos Informations",@"votre suivi",@"a voir",@"Workout",@"espace social",nil];
+     subTitle = [NSMutableArray arrayWithObjects:@"Vos Informations",@"votre suivi santé",@"RDV & autres",@"Workout",@"Forum",nil];
     imageArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"icone_homme.png"],[UIImage imageNamed:@"icone_suivi.png"],[UIImage imageNamed:@"icone_calendar.png"],[UIImage imageNamed:@"icone_défi.png"],[UIImage imageNamed:@"icone_communaute.png"], nil];
     
    
@@ -93,8 +96,8 @@
         FollowViewController* follow = [[FollowViewController alloc]init];
         [self.navigationController pushViewController:follow animated:YES];
     }else if([cellValue isEqualToString:@"Calendrier"] ){
-        AlertTableViewController* follow = [[AlertTableViewController alloc]init];
-        [self.navigationController pushViewController:follow animated:YES];
+        AlertTableViewController* alert = [[AlertTableViewController alloc]init];
+        [self.navigationController pushViewController:alert animated:YES];
     }else if([cellValue isEqualToString:@"Défis"]){
         NSLog(@"%@",cellValue);
     }else if([cellValue isEqualToString:@"Communauté"]){

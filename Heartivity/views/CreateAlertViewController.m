@@ -19,24 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIApplication* objApp = [UIApplication sharedApplication];
-    NSArray*    oldNotifications = [objApp scheduledLocalNotifications];
-    NSLog(@" oldNotifications : %@",oldNotifications);
-    UILocalNotification* local;
-    for (int i =0; i<[oldNotifications count]; i++) {
-        local= [oldNotifications objectAtIndex:i];
-        NSLog(@"Object at index %d for date :%@",i,local);
-    }
-    //[objApp cancelAllLocalNotifications];
- 
-    //NSLog(@" oldNotifications 2 : %@",oldNotifications);
+   
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 -(void)save:(id)sender{
@@ -56,7 +45,7 @@
     localNotification.applicationIconBadgeNumber =[[UIApplication sharedApplication] applicationIconBadgeNumber]+ 1;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
-    [[[self presentingViewController] presentingViewController]  dismissViewControllerAnimated:YES completion:nil];
+    //[[[self presentingViewController] presentingViewController]  dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

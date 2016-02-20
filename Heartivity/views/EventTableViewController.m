@@ -23,9 +23,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"add64.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(create:)];
+    UIBarButtonItem* barButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Plus-48.png" ] landscapeImagePhone:nil style:UIBarButtonItemStylePlain  target:self action:@selector(create:)];
     self.navigationItem.rightBarButtonItem = barButton;
     self.navigationItem.title = @"Social";
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

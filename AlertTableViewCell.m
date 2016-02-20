@@ -1,15 +1,16 @@
 //
-//  AlertCellTableViewCell.m
+//  AlertTableViewCell.m
 //  Heartivity
 //
-//  Created by Manouana on 18/02/2016.
+//  Created by Manouana on 19/02/2016.
 //  Copyright © 2016 Manouana. All rights reserved.
 //
 
-#import "AlertCellTableViewCell.h"
+#import "AlertTableViewCell.h"
 
-@implementation AlertCellTableViewCell
-@synthesize alertLibelle =_alertLibelle;
+@implementation AlertTableViewCell
+@synthesize Titletext = _Titletext;
+@synthesize Datetext =_Datetext;
 - (void)awakeFromNib {
     // Initialization code
 }

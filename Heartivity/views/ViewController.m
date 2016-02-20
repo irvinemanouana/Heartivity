@@ -39,6 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     session = [[Session alloc]init];
     md5 = [[Crypto alloc]init];
     labelError.text = @"";
@@ -48,6 +49,10 @@
     if ([session sessionExist]==true) {
         [self.navigationController pushViewController:tab animated:YES];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationItem.hidesBackButton = TRUE;
 }
 
 - (void)didReceiveMemoryWarning {
